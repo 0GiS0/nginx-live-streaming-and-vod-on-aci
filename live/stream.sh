@@ -1,0 +1,1 @@
+ffmpeg -re -i ../videos/sample.mkv -vcodec copy -loop -1 -c:a aac -b:a 160k -ar 44100 -strict -2 -f flv rtmp://nginx-rtmp-live.northeurope.azurecontainer.io/live/test
